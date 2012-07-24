@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# coding: utf-8
+
+$:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+
+require 'irctc'
+
+options = Irctc::Command.parse ARGV
+if Irctc::Command.validate
+  irctc_calc = Irctc::Calculator.new options
+  puts irctc_calc.calculate
+else # good habit to not leave the else part
+  exit
+end
+
+# Example Usage
+#
