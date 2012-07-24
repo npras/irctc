@@ -18,12 +18,31 @@ It's a command-line awesomness.
 
 To find when the counter opens for a future date, use the `-f` switch:
 
-    irctc -f 'nov 12, 2012'
+    $ irctc -f 'nov 23, 2012'
+    
+    Don't forget to book in '2' days!
+
+    For the given date, tickets are available from this date:
+    (Thu) Jul 26, 2012
+
+    $ irctc -f 'nov 13, 2012'
+
+    Ticket counter already opened '8' days ago.
+
+    For the given date, tickets are available from this date:
+    (Mon) Jul 16, 2012
+
 
 To find for what future date, the counter opens for the given date, use the
 `-p` switch:
 
-    irctc -p 'jul 24, 2012'
+    $ irctc -p 'jul 24, 2012'
+
+    On the given date, tickets are available for this date:
+    (Wed) Nov 21, 2012
+
+Note: As of now, the irctc ticket counter opens **120 days** before the day you
+need to travel.
 
 ## Contributing
 

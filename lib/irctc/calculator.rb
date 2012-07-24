@@ -11,7 +11,7 @@ module Irctc
       # present
       if @present_date
         result = @present_date + IRCTC_DAYS
-        op += "\nTickets for the date:"
+        op += "\nOn the given date, tickets are available for this date:"
       # future
       elsif @future_date
         result = @future_date - IRCTC_DAYS
@@ -21,7 +21,7 @@ module Irctc
         else
           op += "\nDon't forget to book in '#{days_left}' days!"
         end
-        op += "\n\nCounter opening date:"
+        op += "\n\nFor the given date, tickets are available from this date:"
       end
 
       op += result.strftime("\n(%a) %b %d, %Y")
