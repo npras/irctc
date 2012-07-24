@@ -33,7 +33,7 @@ To find when the counter opens for a future date, use the `-f` switch:
     (Mon) Jul 16, 2012
 
 
-To find for what future date, the counter opens for the given date, use the
+To find for what future date the counter opens for the given date, use the
 `-p` switch:
 
     $ irctc -p 'jul 24, 2012'
